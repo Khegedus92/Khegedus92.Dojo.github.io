@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar|Ceviche+One|Kaushan+Script|Julee&display=swap" rel="stylesheet">
+    <title>Dojo</title>
+</head>
+<body>
+    
+        <!-- Kezdőkép -->
+    <div id="postPic">
+        <img id="homPic" src="img/sword2.png" alt="home">
+    </div>
+    <div id="smokeDiv" style="background-image: url(img/smoke.png);">
+        <h1>Bujinkan</h1>
+        <span id="buttonForHome"></span>
+        <h1>Dojo</h1>
+    </div>
+    <!-- Főmenü lista -->
+    <div id="navBarDiv">
+        <ul id="navBarList">
+            <!-- Főmenü lista elemek-->
+            <li><a href="index.html">Föoldal</a></li>
+            <li><a href="dojo.html">Dojo</a></li>
+            <li><a href="martialarts.html">Harcmüvészetek</a>
+                <!-- Főmenü al-lista -->
+                <ul id="navBarSubList1">
+                    <!-- Főmenü al-lista elemek -->
+                    <li><a href="karate.html">Karate</a></li>
+                    <li><a href="jiujitsu.html">Jiu-Jitsu</a></li>
+                    <li><a href="ninjutsu.html">Ninjutsu</a></li>
+                    <li><a href="iaido.html">Iaido</a></li>
+                    <li><a href="trainings.html">Edzések</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutus.html">Rólunk</a>
+                <ul id="navBarSubList2">
+                    <li><a href="ourphilosophy.html">Filozófiánk</a></li>
+                    <li><a href="trainers.html">Oktatók</a></li>
+                    <li><a href="pupils.html">Tanulók</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Galéria</a></li>
+            <li><a href="faq.html">GYIK</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+    </div>
+
+    <!-- Diaképek a Rólunk-hoz-->
+    <div id="aboutPictureDiv">
+        <div class="your-class">
+            <div><img src="img/carousel1.jpg" alt=""></div>
+            <div><img src="img/carousel2.jpg" alt=""></div>
+            <div><img src="img/carousel3.jpg" alt=""></div>
+          </div>
+    </div>
+    <!-- Promo a Rólunk-hoz-->
+    <div id="aboutPromoDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis felis vitae mi mattis, a mollis odio molestie. Phasellus porttitor, sapien non dapibus vehicula, diam.</p>
+        <button id="aboutPromoBtn" onclick='location.href="aboutus.html"'>Ismerj meg minket</button>
+    </div>
+
+    <!-- Promo részek + animáció -->
+    <div id="promoDiv">
+        <div id="firstPromoDiv" style="background-image: url(img/bushido.gif), url(img/bushido1.png), url(img/sword.jpg);">
+            <h1>Filozófiánk</h1>
+            <div id="hamon1" style="background-image: url(img/sword.jpg);"></div>
+        </div>
+        <div id="secondPromoDiv" style="background-image: url(img/sword1.png), url(img/sword.jpg);">
+            <h1>Harcmüvészetek</h1>
+            <div id="hamon2" style="background-image: url(img/sword.jpg);"></div>
+        </div>
+        <div id="thirdPromoDiv" style="background-image: url(img/sword3.png), url(img/sword.jpg);">
+            <h1>Edzések</h1>
+            <div id="hamon3" style="background-image: url(img/sword.jpg);"></div>
+        </div>
+    </div>
+
+    
+
+    <!-- Kep a Dojo-ról-->
+    <div id="dojoPictureDiv" style="background-image: url(img/dojo1.png);">
+    </div>
+    <!-- Promo a Dojo-hoz-->
+    <div id="dojoPromoDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis felis vitae mi mattis, a mollis odio molestie. Phasellus porttitor, sapien non dapibus vehicula, diam.</p>
+        <button id="enterToDojo" onclick='location.href="dojo.html"'>Nézz be a Dojo-ba</button>
+    </div>
+    
+    <!-- Kep a jelentkezéshez-->
+    <div id="applyPictureDiv" style="background-image: url(img/apply1.png), url(img/apply2.png), url(img/apply3.png);">
+    </div>
+    <!-- Figyelemfelkető rész a jelentkezéshez -->
+    <div id="parForApplyDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis felis vitae mi mattis, a mollis odio molestie. Phasellus porttitor, sapien non dapibus vehicula, diam.</p>
+        <button id="parForApplyBtn">Jelentkezési lap</button>
+    </div>
+    
+    <!-- Jelentkezési űrlap div -->
+    <div id="formDiv">
+        <!-- Jelentkezési űrlap forma -->
+        <form id="applyForm">
+            <!-- Jelentkezési űrlap (személyes adatok) -->
+            <div id="textInput">
+                <label for="lastName">Vezetéknév:</label>
+                <label for="firstName">Keresztnév:</label><br>
+
+                <input type="text" name="lastName" id="lastName">
+                <input type="text" name="firstName" id="firstName"><br>
+
+                <label for="email">E-mail:</label>
+                <label for="phoneNumber">Telefonszám:</label><br>
+
+                <input type="email" name="email" id="email">
+                <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}">
+            </div>
+            <!-- Jelentkezési űrlap (harcművészet kiválasztó) -->
+            <div id="checkboxInput">
+                <input type="checkbox" name="karateCB" id="karateCB">
+                <label for="karateCB">Karate</label>
+
+                <input type="checkbox" name="jiuJitsuCB" id="jiuJitsuCB">
+                <label for="jiuJitsuCB">Jiu-Jitsu</label><br>
+
+                <input type="checkbox" name="ninjutsuCB" id="ninjutsuCB">
+                <label for="ninjutsuCB">Ninjutsu</label>
+
+                <input type="checkbox" name="iaidoCB" id="iaidoCB">
+                <label for="iaidoCB">Iaido</label><br>
+            </div>
+            <!-- Jelentkezési űrlap üzenet mező -->
+            <textarea name="messageText" id="MessageText" cols="30" rows="10"></textarea>
+            <!-- Jelentkezési űrlap elküldés gomb -->
+            <input type="button" value="Jelentkezés" id="applyBtn">
+        </form>
+        <!-- Jelentkezési űrlapot bezáró gomb-->
+        <button id="slideUpApplicationForm"></button>
+    </div>
+    
+    
+    <div id="footerDiv">
+        <img src="img/facebook.svg" alt="facebook">
+        <img src="img/instagram.svg" alt="instagram">
+        <img src="img/youtube.svg" alt="youtube">
+        <hr>
+        <p>2020 Orochi-Dai Dojo | All rights Reserved.</p>
+    </div>
+
+    
+    
+
+    
+    <!-- include jQuery via CDN -->
+    <script src="jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- your own file in your project folder -->
+    <script src="script.js"></script>
+</body>
+</html>
